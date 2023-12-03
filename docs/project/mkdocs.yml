@@ -1,0 +1,60 @@
+site_name: SICOMU
+repo_url: https://github.com/DevCoreRepos/SICOMU
+site_dir: ../output
+nav:
+  - Home: index.md
+  - License: license.md
+extra:
+  generator: false
+  # social:
+  #   - icon: fontawesome/brands/mastodon 
+  #     link: https://fosstodon.org/@squidfunk
+plugins:
+  - search
+copyright: Copyright &copy; 2023 JHubi1
+markdown_extensions:
+  - attr_list
+  - md_in_html
+theme: 
+  name: material
+  icon:
+    logo: material/message-arrow-right-outline
+  favicon: img/message-arrow-right-outline.svg
+  palette:
+    # - media: "(prefers-color-scheme)"
+    #   primary: teal
+    #   accent: green
+    #   toggle:
+    #     icon: material/link
+    #     name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+        #system preference
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    
+    - toc.follow
+    
+    - search.suggest
+    - search.share
+    
+    - navigation.footer
